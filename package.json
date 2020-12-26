@@ -1,7 +1,7 @@
 {
-  "name": "bootstrap_personal_practice",
+  "name": "Dinos for Sale",
   "version": "1.0.0",
-  "description": "Practice site for Bootstrap",
+  "description": "Personal html, css, and Bootstrap project for Nucamp",
   "main": "index.js",
   "scripts": {
     "lite": "lite-server",
@@ -13,7 +13,9 @@
   "dependencies": {
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
-    "lite-server": "^2.5.4",
     "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4"
   }
 }

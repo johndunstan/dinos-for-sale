@@ -1,6 +1,6 @@
-# dinos-for-sale
+# Dinos for Sale
 
-Personal html, css, and bootstrap project for Nucamp
+Personal html, css, and bootstrap project for Nucamp.
 
 ## Dev Dependencies
 
