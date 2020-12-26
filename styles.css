@@ -1,0 +1,63 @@
+body {
+  margin-top: 3rem;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+#purchaseBtn {
+  float: right;
+}
+
+.content {
+  padding: 5rem 2rem;
+  background-color: #afc5a5;
+}
+
+form {
+  padding: 3rem;
+  width: 50%;
+  margin: auto;
+}
+
+.btn-primary {
+  background-color: #77a2c2;
+  border-color: #5f8db0;
+}
+
+.btn-primary:hover {
+  background-color: #5f8db0;
+}
+
+footer {
+  background-color: lightgray;
+}
+
+@media only screen and (max-width: 992px) {
+  .left-content,
+  .center-content,
+  .right-content {
+    padding: 5rem;
+    background-color: #afc5a5;
+  }
+
+  .center-content {
+    background-color: white;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  form {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  form {
+    width: 95%;
+    padding: 3 rem 1.5rem;
+  }
+}
