@@ -2,6 +2,8 @@
 
 Personal html, css, and bootstrap project for Nucamp.
 
+This site uses a combination of bootstrap and flexbox. My overall intention was to create a basic one-page sales site.
+
 ## Dev Dependencies
 
 - `npm install lite-server@2.5.4 --save-dev`

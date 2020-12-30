@@ -11,14 +11,13 @@
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>Dinos 4 Sale</title>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
     <!-- Navbar -->
-
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Dinos 4 Sale</a>
       <button
@@ -40,22 +39,30 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#features">Products</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faqs">FAQs</a>
+          </li>
         </ul>
-        <button
-          id="purchaseBtn"
-          class="btn btn-dark my-2 my-sm-0"
-          type="submit"
-        >
-          Purchase
-        </button>
+        <span class="ml-md-auto">
+          <a href="#contact">
+            <button
+              id="purchaseBtn"
+              class="btn btn-dark my-2 my-sm-0"
+              type="submit"
+            >
+              Purchase
+            </button>
+          </a>
+        </span>
       </div>
     </nav>
 
+    <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">Get Your Awesome Dinos Here!</h1>
@@ -135,24 +142,178 @@
       </div>
     </div>
 
-    <form id="contact">
-      <h3>Start your dino journey.</h3>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input
-          type="email"
-          class="form-control"
-          id="exampleInputEmail1"
-          aria-describedby="emailHelp"
-          placeholder="dinos@example.com"
+    <!-- Products -->
+    <div class="card-deck-custom">
+      <div class="card product-card">
+        <img
+          class="card-img-top"
+          src="images/thumbs/ankylosaurus.png"
+          alt="Card image cap"
         />
-        <small id="emailHelp" class="form-text text-muted"
-          >We'll never share your email with anyone else.</small
-        >
+        <div class="card-body">
+          <h4 class="card-title">Ankylosaurus</h4>
+          <h5 class="card-subtitle mb-2 text-muted">Ready to Play</h5>
+          <p class="card-text">Lorem ipsum la la alal alalallal alalla</p>
+        </div>
       </div>
+      <div class="card product-card">
+        <img
+          class="card-img-top"
+          src="images/thumbs/Brachiosaurus.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Brachiosaurus</h4>
+          <h5 class="card-subtitle mb-2 text-muted">A Whole Lotta Love</h5>
+          <p class="card-text">Lorem ipsum la la alal alalallal alalla</p>
+        </div>
+      </div>
+      <div class="card product-card">
+        <img
+          class="card-img-top"
+          src="images/thumbs/triceratops.png"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Triceratops</h4>
+          <h5 class="card-subtitle mb-2 text-muted">Tried and True</h5>
+          <p class="card-text">Lorem ipsum la la alal alalallal alalla</p>
+        </div>
+      </div>
+    </div>
 
-      <button type="submit" class="btn btn-primary">Change my life</button>
-    </form>
+    <!-- Contact -->
+    <div id="contact">
+      <form>
+        <h3>Start your dino journey.</h3>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="dinos@example.com"
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+
+        <button type="submit" class="btn btn-primary">Change my life</button>
+      </form>
+    </div>
+
+    <!-- Accordian -->
+    <div class="accordion container-fluid" id="faqs">
+      <h2>FAQs</h2>
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button
+              class="btn btn-link"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Collapsible Group Item #1
+            </button>
+          </h5>
+        </div>
+
+        <div
+          id="collapseOne"
+          class="collapse show"
+          aria-labelledby="headingOne"
+          data-parent="#faqs"
+        >
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+            terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+            skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+            Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+            single-origin coffee nulla assumenda shoreditch et. Nihil anim
+            keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+            sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+            occaecat craft beer farm-to-table, raw denim aesthetic synth
+            nesciunt you probably haven't heard of them accusamus labore
+            sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Collapsible Group Item #2
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseTwo"
+          class="collapse"
+          aria-labelledby="headingTwo"
+          data-parent="#faqs"
+        >
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+            terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+            skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+            Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+            single-origin coffee nulla assumenda shoreditch et. Nihil anim
+            keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+            sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+            occaecat craft beer farm-to-table, raw denim aesthetic synth
+            nesciunt you probably haven't heard of them accusamus labore
+            sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Collapsible Group Item #3
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseThree"
+          class="collapse"
+          aria-labelledby="headingThree"
+          data-parent="#faqs"
+        >
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+            terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+            skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+            Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+            single-origin coffee nulla assumenda shoreditch et. Nihil anim
+            keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+            sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+            occaecat craft beer farm-to-table, raw denim aesthetic synth
+            nesciunt you probably haven't heard of them accusamus labore
+            sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="page-footer font-small blue">

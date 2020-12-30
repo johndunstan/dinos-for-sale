@@ -1,13 +1,23 @@
 body {
   margin-top: 3rem;
+  position: relative;
+}
+
+h2 {
+  padding-left: 1rem;
+}
+
+#contact {
+  margin: 5rem auto;
 }
 
 .jumbotron {
   margin-bottom: 0;
 }
 
-#purchaseBtn {
-  float: right;
+.nav-item > .active {
+  background-color: aliceblue;
+  border-radius: 0.25rem;
 }
 
 .content {
@@ -30,8 +40,23 @@ form {
   background-color: #5f8db0;
 }
 
+.card-deck-custom {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+}
+
+.product-card {
+  width: 30%;
+}
+
+#faqs {
+  padding-bottom: 2rem;
+}
+
 footer {
-  background-color: lightgray;
+  background-color: rgb(179, 153, 153);
 }
 
 @media only screen and (max-width: 992px) {
@@ -59,5 +84,14 @@ footer {
   form {
     width: 95%;
     padding: 3 rem 1.5rem;
+  }
+
+  .card-deck-custom {
+    padding: 1rem;
+  }
+
+  .card {
+    width: 90%;
+    margin: 1rem;
   }
 }
