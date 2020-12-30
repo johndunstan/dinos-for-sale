@@ -56,8 +56,31 @@ form {
   width: 80%;
 }
 
+#about {
+  width: 80%;
+  margin: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 footer {
   background-color: rgb(179, 153, 153);
+  text-align: center;
+  padding: 0.75rem 0;
+}
+
+footer > div {
+  padding: 0.25rem 0;
+}
+
+footer .fab {
+  font-size: 3rem;
+  padding: 0.3rem;
+  color: lightblue;
+}
+
+footer .fab:hover {
+  color: lightskyblue;
 }
 
 @media only screen and (max-width: 992px) {
@@ -74,6 +97,10 @@ footer {
 
   .content {
     padding: 0;
+  }
+
+  .content > .row {
+    margin: 0;
   }
 
   form {
@@ -103,5 +130,14 @@ footer {
 
   #faqs {
     width: 95%;
+  }
+
+  #about {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  footer .fab {
+    font-size: 5rem;
   }
 }
