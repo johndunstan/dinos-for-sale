@@ -2,8 +2,14 @@ body {
   margin-top: 3rem;
   position: relative; }
 
-h2 {
-  padding-left: 1rem; }
+h1 span {
+  display: inline-block; }
+
+button {
+  transition-duration: 0.4s; }
+
+button:active {
+  transform: scale(0.97); }
 
 #contact {
   margin: 5rem auto; }
@@ -12,7 +18,7 @@ h2 {
   margin-bottom: 0; }
 
 .nav-item > .active {
-  background-color: aliceblue;
+  background-color: #e3ecf2;
   border-radius: 0.25rem; }
 
 .content {
@@ -24,12 +30,18 @@ form {
   width: 50%;
   margin: auto; }
 
-.btn-primary {
+.btn-submit {
   background-color: #77a2c2;
-  border-color: #5f8db0; }
+  border-color: #5f8db0;
+  color: #f2f3f4; }
 
-.btn-primary:hover {
-  background-color: #5f8db0; }
+.btn-submit:hover {
+  background-color: white;
+  color: #77a2c2; }
+
+.btn-submit:active {
+  background-color: white;
+  color: #77a2c2; }
 
 .card-deck-custom {
   display: flex;
@@ -51,7 +63,7 @@ form {
   padding-bottom: 4rem; }
 
 footer {
-  background-color: #b39999;
+  background-color: #a1b1b8;
   text-align: center;
   padding: 0.75rem 0; }
 
@@ -61,12 +73,16 @@ footer > div {
 footer .fab {
   font-size: 3rem;
   padding: 0.3rem;
-  color: lightblue; }
+  color: #4a9086;
+  color: #a74b3f; }
 
 footer .fab:hover {
-  color: lightskyblue; }
+  color: #427f77;
+  color: #944338; }
 
 @media only screen and (max-width: 992px) {
+  #features h2 {
+    font-size: 3rem; }
   .left-content,
   .center-content,
   .right-content {
@@ -78,8 +94,19 @@ footer .fab:hover {
     padding: 0; }
   .content > .row {
     margin: 0; }
+  .card-deck-custom {
+    padding: 1rem; }
+  .product-card {
+    width: 70%;
+    margin: 2rem; }
   form {
-    width: 80%; } }
+    width: 80%; }
+  .btn-submit,
+  .btn-submit:hover,
+  .btn-submit:active {
+    background-color: #77a2c2;
+    border-color: #5f8db0;
+    color: #f2f3f4; } }
 
 @media only screen and (max-width: 576px) {
   form {

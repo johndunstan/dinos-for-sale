@@ -1,10 +1,25 @@
+$primary-background: #afc5a5;
+$pale-yellow: #f2eec3;
+$teal: #53a196;
+$gray-blue: #677f7c;
+$brown: #5e4835;
+$anti-flash-white: #f2f3f4;
+
 body {
   margin-top: 3rem;
   position: relative;
 }
 
-h2 {
-  padding-left: 1rem;
+h1 span {
+  display: inline-block;
+}
+
+button {
+  transition-duration: 0.4s;
+}
+
+button:active {
+  transform: scale(0.97);
 }
 
 #contact {
@@ -16,13 +31,13 @@ h2 {
 }
 
 .nav-item > .active {
-  background-color: aliceblue;
+  background-color: #e3ecf2;
   border-radius: 0.25rem;
 }
 
 .content {
   padding: 5rem 2rem;
-  background-color: #afc5a5;
+  background-color: $primary-background;
 }
 
 form {
@@ -31,13 +46,25 @@ form {
   margin: auto;
 }
 
-.btn-primary {
+.btn-submit {
   background-color: #77a2c2;
   border-color: #5f8db0;
+  color: $anti-flash-white;
 }
 
-.btn-primary:hover {
-  background-color: #5f8db0;
+.btn-submit:hover {
+  //   background-color: #5f8db0;
+  background-color: white;
+  color: #77a2c2;
+  //   color: $anti-flash-white;
+}
+
+.btn-submit:active {
+  //   background-color: #77a2c2;
+  //   border-color: #5f8db0;
+  //   color: $anti-flash-white;
+  background-color: white;
+  color: #77a2c2;
 }
 
 .card-deck-custom {
@@ -64,7 +91,7 @@ form {
 }
 
 footer {
-  background-color: rgb(179, 153, 153);
+  background-color: #a1b1b8;
   text-align: center;
   padding: 0.75rem 0;
 }
@@ -76,14 +103,20 @@ footer > div {
 footer .fab {
   font-size: 3rem;
   padding: 0.3rem;
-  color: lightblue;
+  color: darken($teal, 5%);
+  color: #a74b3f;
 }
 
 footer .fab:hover {
-  color: lightskyblue;
+  color: darken($teal, 10%);
+  color: darken(#a74b3f, 5%);
 }
 
 @media only screen and (max-width: 992px) {
+  #features h2 {
+    font-size: 3rem;
+  }
+
   .left-content,
   .center-content,
   .right-content {
@@ -103,8 +136,25 @@ footer .fab:hover {
     margin: 0;
   }
 
+  .card-deck-custom {
+    padding: 1rem;
+  }
+
+  .product-card {
+    width: 70%;
+    margin: 2rem;
+  }
+
   form {
     width: 80%;
+  }
+
+  .btn-submit,
+  .btn-submit:hover,
+  .btn-submit:active {
+    background-color: #77a2c2;
+    border-color: #5f8db0;
+    color: $anti-flash-white;
   }
 }
 
