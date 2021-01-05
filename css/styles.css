@@ -80,12 +80,16 @@ footer > div {
   padding: 0.25rem 0; }
 
 footer .fab {
+  transition-duration: 0.4s;
   font-size: 3rem;
   padding: 0.3rem;
   color: #a74b3f; }
 
 footer .fab:hover {
   color: #944338; }
+
+footer .fab:active {
+  transform: scale(0.97); }
 
 @media only screen and (max-width: 992px) {
   #features h2 {
