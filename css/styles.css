@@ -2,6 +2,14 @@ body {
   margin-top: 3rem;
   position: relative; }
 
+#products:before,
+#contact:before,
+#faqs:before,
+#about:before {
+  height: 4rem;
+  content: '';
+  display: block; }
+
 h1 span {
   display: inline-block; }
 
@@ -47,7 +55,8 @@ form {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  padding-top: 0; }
 
 .product-card {
   width: 30%; }
@@ -73,11 +82,9 @@ footer > div {
 footer .fab {
   font-size: 3rem;
   padding: 0.3rem;
-  color: #4a9086;
   color: #a74b3f; }
 
 footer .fab:hover {
-  color: #427f77;
   color: #944338; }
 
 @media only screen and (max-width: 992px) {
@@ -95,7 +102,8 @@ footer .fab:hover {
   .content > .row {
     margin: 0; }
   .card-deck-custom {
-    padding: 1rem; }
+    padding: 1rem;
+    padding-top: 0; }
   .product-card {
     width: 70%;
     margin: 2rem; }

@@ -10,6 +10,15 @@ body {
   position: relative;
 }
 
+#products:before,
+#contact:before,
+#faqs:before,
+#about:before {
+  height: 4rem;
+  content: '';
+  display: block;
+}
+
 h1 span {
   display: inline-block;
 }
@@ -72,6 +81,7 @@ form {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 1.5rem;
+  padding-top: 0;
 }
 
 .product-card {
@@ -103,12 +113,10 @@ footer > div {
 footer .fab {
   font-size: 3rem;
   padding: 0.3rem;
-  color: darken($teal, 5%);
   color: #a74b3f;
 }
 
 footer .fab:hover {
-  color: darken($teal, 10%);
   color: darken(#a74b3f, 5%);
 }
 
@@ -138,6 +146,7 @@ footer .fab:hover {
 
   .card-deck-custom {
     padding: 1rem;
+    padding-top: 0;
   }
 
   .product-card {
