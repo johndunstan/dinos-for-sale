@@ -46,16 +46,13 @@ I also used:
 As I spent more and more time in the code, I found myself doing a bit of tinkering on button transitions, responsivity, and color choices. One specific example is the product-cards. The h4 text was wrapping strangely at certain viewport widths so I adjusted the responsivity (by stacking the cards sooner than I had been) to accommodate a better user experience.
 
 Another small thing that I did was keep the ‘Dinos Here!’ text together when the h1 wraps in the jumbotron on smaller viewports - it’s a minor thing, but I appreciate small attention to those type of details.
-
-{insert dino header}
+![Dino Header](images/readme-images/jumbotron-header.png)
 
 I also thought through changing the hover of the ‘Change my life’ button - at larger screens the button fades from blue to white on hover. However, on mobile devices (likely using touch instead of a mouse), that functionality doesn’t make sense so the color remains static.
-
-{insert button gif}
+![Submit button animation](images/readme-images/button-hover.gif)
 
 Another detail I tackled was when selecting a navbar item, the section would overlap just a little under the navbar. I adjusted the overlap by adding blank content to display before my major sections thus pushing that content below the navbar.
-
-{insert code snippet}
+![Css code snippet](images/readme-images/css-section-offset.png)
 
 ### Conclusions
 
@@ -67,4 +64,4 @@ If the site has any shortcomings, it’s the simplicity. I was tempted to make s
 
 Were I doing the project from the beginning knowing what I know now, I’d probably do things to challenge myself more like use less Bootstrap and possibly implement some further complex code like using a modal for the purchase button (rather than just linking to the email form) or using some javascript to mimic successfully capturing an email submission. I’m also still not fully convinced I like the rust color of the social media buttons.
 
-{insert full screenshot}
+![Dino Header](images/readme-images/full-site.png)
