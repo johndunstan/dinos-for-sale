@@ -1,6 +1,6 @@
 # Dinos for Sale
 
-(https://dinos-4-sale-83d45b.netlify.app/)
+[Dinos 4 Sale - Live Site](https://dinos-4-sale-83d45b.netlify.app/)
 
 Personal html, css, and bootstrap project for [Nucamp](https://www.nucamp.co/).
 
