@@ -52,7 +52,6 @@ I also thought through changing the hover of the ‘Change my life’ button - a
 ![Submit button animation](images/readme-images/button-hover.gif)
 
 Another detail I tackled was when selecting a navbar item, the section would overlap just a little under the navbar. I adjusted the overlap by adding blank content to display before my major sections thus pushing that content below the navbar.
-
 ![Css code snippet](images/readme-images/css-section-offset.png)
 
 ### Conclusions
