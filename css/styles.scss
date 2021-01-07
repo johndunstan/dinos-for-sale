@@ -5,9 +5,20 @@ $gray-blue: #677f7c;
 $brown: #5e4835;
 $anti-flash-white: #f2f3f4;
 
+$header-font: 'Quicksand', sans-serif;
+$body-font: 'Raleway', sans-serif;
+
 body {
   margin-top: 3rem;
   position: relative;
+  font-family: $body-font;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $header-font;
 }
 
 #products:before,
