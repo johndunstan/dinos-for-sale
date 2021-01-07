@@ -1,8 +1,8 @@
 # Dinos for Sale
 
-Personal html, css, and bootstrap project for Nucamp.
+Personal html, css, and bootstrap project for [Nucamp](https://www.nucamp.co/).
 
-This site uses a combination of bootstrap and flexbox. My overall intention was to create a basic one-page sales site.
+This site uses a combination of html and css including use of bootstrap and flexbox. My overall intention was to create a basic one-page sales site.
 
 ## Dev Dependencies
 
