@@ -1,9 +1,10 @@
 $primary-background: #afc5a5;
-$pale-yellow: #f2eec3;
-$teal: #53a196;
-$gray-blue: #677f7c;
-$brown: #5e4835;
 $anti-flash-white: #f2f3f4;
+$pale-blue: #e3ecf2;
+$cloud-blue: #77a2c2;
+$border-blue: #5f8db0;
+$footer-background: #a1b1b8;
+$social-button: #a74b3f;
 
 $header-font: 'Quicksand', sans-serif;
 $body-font: 'Raleway', sans-serif;
@@ -51,7 +52,7 @@ button:active {
 }
 
 .nav-item > .active {
-  background-color: #e3ecf2;
+  background-color: $pale-blue;
   border-radius: 0.25rem;
 }
 
@@ -67,24 +68,19 @@ form {
 }
 
 .btn-submit {
-  background-color: #77a2c2;
-  border-color: #5f8db0;
+  background-color: $cloud-blue;
+  border-color: $border-blue;
   color: $anti-flash-white;
 }
 
 .btn-submit:hover {
-  //   background-color: #5f8db0;
   background-color: white;
-  color: #77a2c2;
-  //   color: $anti-flash-white;
+  color: $cloud-blue;
 }
 
 .btn-submit:active {
-  //   background-color: #77a2c2;
-  //   border-color: #5f8db0;
-  //   color: $anti-flash-white;
   background-color: white;
-  color: #77a2c2;
+  color: $cloud-blue;
 }
 
 .card-deck-custom {
@@ -112,7 +108,7 @@ form {
 }
 
 footer {
-  background-color: #a1b1b8;
+  background-color: $footer-background;
   text-align: center;
   padding: 0.75rem 0;
 }
@@ -125,11 +121,11 @@ footer .fab {
   transition-duration: 0.2s;
   font-size: 3rem;
   padding: 0.3rem;
-  color: #a74b3f;
+  color: $social-button;
 }
 
 footer .fab:hover {
-  color: darken(#a74b3f, 5%);
+  color: darken($social-button, 5%);
 }
 
 footer .fab:active {
@@ -145,7 +141,7 @@ footer .fab:active {
   .center-content,
   .right-content {
     padding: 5rem;
-    background-color: #afc5a5;
+    background-color: $primary-background;
   }
 
   .center-content {
@@ -177,8 +173,8 @@ footer .fab:active {
   .btn-submit,
   .btn-submit:hover,
   .btn-submit:active {
-    background-color: #77a2c2;
-    border-color: #5f8db0;
+    background-color: $cloud-blue;
+    border-color: $border-blue;
     color: $anti-flash-white;
   }
 }
