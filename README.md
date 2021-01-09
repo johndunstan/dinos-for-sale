@@ -17,6 +17,16 @@ npm install --save-dev onchange@7.0.0
 npm install --save-dev -E parallelshell@3.0.1
 ```
 
+### Project Commands
+#### Start Local Server
+From project directory:
+`npm start`
+
+#### Create Build
+Will create fresh build files (minify, uglify, etc) and put them in the dist folder to host elsewhere.
+From project directory:
+`npm run build`
+
 ## Project Background/Report
 
 ### Introduction
