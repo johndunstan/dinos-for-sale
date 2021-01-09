@@ -42,7 +42,7 @@ My original [wireframe is here](https://www.figma.com/file/VEuehsoE4nMfueOlpC0V8
 Most individual components are from Bootstrap including:
 
 - Navbar
-- Jumotron
+- Jumbotron
 - Image carousel
 - Cards for products (however I used flexbox to put the cards in)
 - Email-capture form
